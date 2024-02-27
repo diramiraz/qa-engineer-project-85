@@ -1,10 +1,11 @@
 ---
 - summary: |
-    Проверка входа пользователя с существующими логином и паролем
+    Проверка авторизации через email
   requirement: |
     При верном вводе логине и пароля пользователь должен войти в систему
   prerequisites: |
     открыта страница логина
+    https://codebattle.hexlet.io/session/new
   test-data: |
     Тестовые данные
     Логин = diramiraz@yandex.ru Пароль = 252332
@@ -13,10 +14,10 @@
     - Вводим пароль
     - Нажимаем кнопку «Войти»
   expected-result: |
-    Пользователь должен попасть на главную страницу
+    Успешная авторизация
 
 - summary: |
-    Проверка входа пользователя с несуществующими логином и паролем
+    Проверка авторизации незарегистрированного пользователя
   requirement: |
     При неправильном логине или пароле пользователь должен получить сообщение об ошибке
   prerequisites:
@@ -28,14 +29,15 @@
     - Вводим пароль
     - Нажимаем кнопку «Войти»
   expected-result: |
-    Пользователь должен получить сообщение об ошибке
+    Пользователь не авторизован
 
 - summary: |
-    Восстановление пароля
+    Проверка ссылки в письме о восстановлении пароля
   requirement: |
     При верно указанных данных, получить письмо на почту
   prerequisites:
     Открыта страница логина
+    https://codebattle.hexlet.io/session/new
   test-data: |
     Логин = diramiraz@yandex.ru
   steps:
@@ -44,3 +46,87 @@
     - Нажимаем кнопку «Submit»
   expected-result: |
     Пользователь должен получить сообщение "We have sent you an email with instructions on how to reset your password"
+
+- summary: |
+    Авторизация через Discord
+  requirement: |
+    При использовании аккаунта Discord пользователь должен войти в систему
+  prerequisites:
+    Открыта страница логина
+    https://codebattle.hexlet.io/session/new
+  test-data: |
+    Заранее подготовленный аккаунт Discord
+  steps:
+    - Выбирает Sign in with Discord
+    - Авторизирцемся учетной записью Discord
+    - Нажимаем кнопку «Авторизовать»
+  expected-result: |
+    Успешная авторизация
+
+- summary: |
+    Авторизация через Github
+  requirement: |
+    При использовании аккаунта Github пользователь должен войти в систему
+  prerequisites:
+    Открыта страница логина
+    https://codebattle.hexlet.io/session/new
+  test-data: |
+    Заранее подготовленный аккаунт Github
+  steps:
+    - Выбирает Sign in with Github
+    - Авторизирцемся учетной записью Discord
+  expected-result: |
+    Успешная авторизация
+
+- summary: |
+    Cоздание игры со случайным юзером
+  requirement: |
+    При создании игры она отобразится в lobby
+  prerequisites:
+    Открыта страница lobby
+    https://codebattle.hexlet.io/#lobby
+  test-data: |
+    https://codebattle.hexlet.io/#lobby
+  steps:
+    - Нажимаем Create a Game
+    - Level 1 (star)
+    - Whith other user
+    - Time control 10 min
+    - Choose task by name or tags - random task
+    - Tags - не выбираем
+  expected-result: |
+    Игра создалась в lobby
+
+- summary: |
+    Cоздание игры со случайным юзером
+  requirement: |
+    При создании игры она отобразится в lobby
+  prerequisites:
+    Открыта страница lobby
+    https://codebattle.hexlet.io/#lobby
+  test-data: |
+    https://codebattle.hexlet.io/#lobby
+  steps:
+    - Нажимаем Create a Game
+    - Level 3 (star)
+    - Whith other user
+    - Time control 30 min
+    - Choose task by name or tags - get_file
+  expected-result: |
+    Игра создалась в lobby
+
+ - summary: |
+    Вступить в игру открытую игру случайного юзера
+  requirement: |
+    При выборе игры открывется CodeBattle
+  prerequisites:
+    Открыта страница lobby
+    https://codebattle.hexlet.io/#lobby
+  test-data: |
+    https://codebattle.hexlet.io/#lobby
+  steps:
+    - Выбираем вкладку Lobby
+    - В первой доступной игры выбираем Fight
+  expected-result: |
+    Открылся режим CodeBattle  
+
