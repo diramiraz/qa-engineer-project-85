@@ -148,7 +148,7 @@
     В окне General получено сообщение: You invite [НИК] to battle. Wait for his reply
 
 - summary: |
-   Отмена созданного приглашения для друга
+    Отмена созданного приглашения для друга
   requirement: |
     Успешная отмена приглашения
   prerequisites:
@@ -167,7 +167,7 @@
     В окне General получено сообщение: You cancel battle invite [Opponent НИК]
 
 - summary: |
-   Отправка приватных сообщений
+    Отправка приватных сообщений
   requirement: |
     Успешная отправка сообщений
   prerequisites:
@@ -185,7 +185,7 @@
     Сообщение отправлено пользователю
 
 - summary: |
-   Отправка приватных сообщений из lobby
+    Отправка приватных сообщений из lobby
   requirement: |
     Успешная отправка сообщений
   prerequisites:
@@ -203,7 +203,7 @@
     Сообщение отправлено пользователю
 
 - summary: |
-   Создание игры без регистрации
+    Создание игры без регистрации
   requirement: |
     Игра успешно создалась
   prerequisites:
@@ -218,7 +218,7 @@
     Открылся режим CodeBattle без регистрации/авторизации
 
 - summary: |
-   Открыть игру с другом
+    Открыть игру с другом
   requirement: |
     Создалась игра с другом
   prerequisites:
@@ -236,7 +236,7 @@
     Открылся режим CodeBattle с другом
 
 - summary: |
-   Победить друга в CodeBattle
+    Победить друга в CodeBattle
   requirement: |
     Успешно пройденный CodeBattle
   prerequisites:
@@ -255,7 +255,7 @@
     Успешно пройденная игра
 
 - summary: |
-   Отменить приглашение в CodeBattle
+    Отменить приглашение в CodeBattle
   requirement: |
     Успешная отмена приглашения
   prerequisites:
