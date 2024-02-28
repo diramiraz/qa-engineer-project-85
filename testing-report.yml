@@ -20,13 +20,49 @@
   status: pass
 
 - summary: |
-    Cоздание игры со случайным юзером
+    Cоздание игры со случайным юзером Level 1
   status: pass
 
 - summary: |
-    Cоздание игры со случайным юзером
+    Создание игры со случайным юзером Level 3
   status: pass
 
 - summary: |
-    Вступить в игру открытую игру случайного юзера
+    Вступить в игру случайного юзера
   status: pass
+
+- summary: |
+    Создание приглашения в игру для друга
+  status: pass
+
+- summary: |
+    Отмена созданного приглашения для друга
+  status: pass
+
+- summary: |
+    Отправка приватных сообщений
+  status: pass
+
+- summary: |
+    Отправка приватных сообщений из lobby
+  status: pass
+
+- summary: |
+    Создание игры без регистрации
+  status: pass
+
+- summary: |
+    Открыть игру с другом
+  status: pass
+
+- summary: |
+    Победить друга в CodeBattle
+  status: pass
+
+- summary: |
+    Отменить приглашение в CodeBattle
+  status: pass
+
+- summary: |
+    Запустить повторную игру с другом после истечения времени
+  status: fail
