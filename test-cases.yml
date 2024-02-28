@@ -273,3 +273,23 @@
     - Нажимаем Dicline
   expected-result: |
     Получено сообщение: You decline battle invite [Opponent НИК]
+
+- summary: |
+    Запустить повторную игру с другом после истечения времени
+  requirement: |
+    Успешно запущенная игра
+  prerequisites:
+    Открыта страница lobby
+    https://codebattle.hexlet.io/#lobby
+  test-data: |
+    https://codebattle.hexlet.io/#lobby
+  steps:
+    - Выбираем Create a Game
+    - Game type - Whith a friend
+    - choose opponent - выбираем друга
+    - Crate invite
+    - ждем подтверждения
+    - ожидаем, пока закончится таймер
+    - нажать на кнопку Rematch
+  expected-result: |
+    Игра успешно пересоздалась
