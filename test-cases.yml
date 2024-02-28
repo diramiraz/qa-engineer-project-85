@@ -115,7 +115,7 @@
   expected-result: |
     Игра создалась в lobby
 
- - summary: |
+- summary: |
     Вступить в игру открытую игру случайного юзера
   requirement: |
     При выборе игры открывется CodeBattle
