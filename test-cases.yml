@@ -39,6 +39,7 @@
     Открыта страница логина
     https://codebattle.hexlet.io/session/new
   test-data: |
+    n.a.
   steps:
     - Выбирает Forgot password
     - Вводим email своего пользователя
@@ -84,6 +85,7 @@
   prerequisites:
     https://codebattle.hexlet.io/#lobby
   test-data: |
+    n.a.
   steps:
     - Нажимаем Create a Game
     - Выбираем любые опции
@@ -98,6 +100,7 @@
   prerequisites:
     https://codebattle.hexlet.io/#lobby
   test-data: |
+    n.a.
   steps:
     - Выбираем вкладку Lobby
     - В первой доступной игры выбираем Fight
@@ -151,7 +154,8 @@
     Успешная отправка сообщений
   prerequisites:
     https://codebattle.hexlet.io/#lobby
-  test-data: |    
+  test-data: |
+    n.a.
   steps:
     - Выбираем иконку письма
     - Выбираем пользователя из списка
@@ -166,7 +170,8 @@
     Успешная отправка сообщений
   prerequisites:
     https://codebattle.hexlet.io/#lobby
-  test-data: |    
+  test-data: |
+    n.a.
   steps:
     - Выбираем пользователя онлайн и жмем на его ник
     - В открывшемся меню выбираем - Direct message
