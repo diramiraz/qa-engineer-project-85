@@ -202,14 +202,15 @@
   prerequisites:
     https://codebattle.hexlet.io/#lobby
   test-data: |
-const _ = require("lodash");
-const R = require("rambda");
+    Код решения:
+    const _ = require("lodash");
+    const R = require("rambda");
 
-const solution = (width, length) => {
-  return width * length;
-};
+    const solution = (width, length) => {
+      return width * length;
+    };
 
-module.exports = solution;
+    module.exports = solution;
   steps:
     - Выбираем Create a Game
     - Game type - Whith a bot
